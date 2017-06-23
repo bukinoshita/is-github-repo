@@ -1,33 +1,33 @@
-# is-git-repository [![Build Status](https://travis-ci.org/bukinoshita/is-git-repository.svg?branch=master)](https://travis-ci.org/bukinoshita/is-git-repository)
+# is-github-repo [![Build Status](https://travis-ci.org/bukinoshita/is-github-repo.svg?branch=master)](https://travis-ci.org/bukinoshita/is-github-repo)
 
 > Checks if string is a git repository
 
 ## Install
 
 ```
-$ npm install --save is-git-repository
+$ npm install --save is-github-repo
 ```
 
 ## Usage
 ```js
-const isGitRepository = require('is-git-repository')
+const isGithubRepo = require('is-github-repo')
 
 /* with https */
-isGitRepository('https://github.com/bukinoshita/is-git-repository.git')
+isGithubRepo('https://github.com/bukinoshita/is-github-repo.git')
 // => true
 
 /* with ssh */
-isGitRepository('git@github.com:bukinoshita/is-git-repository.git')
+isGithubRepo('git@github.com:bukinoshita/is-github-repo.git')
 // => true
 
 /* with owner/repo */
-isGitRepository('bukinoshita/is-git-repository')
+isGithubRepo('bukinoshita/is-github-repo')
 // => true
 ```
 
 ## API
 
-### isGitRepository(repo, { withType })
+### isGithubRepo(repo, { withType })
 
 returns a `boolean` or `object`.
 

@@ -8,20 +8,20 @@ module.exports = (repo, { withType = false } = {}) => {
 
   if (withType) {
     const result = {
-      isGitRepository: false,
+      isGithubRepo: false,
       type: null
     }
 
     if (ssh.test(repo) && regex.test(repo)) {
-      result.isGitRepository = true
+      result.isGithubRepo = true
       result.type = 'ssh'
       return result
     } else if (https.test(repo) && regex.test(repo)) {
-      result.isGitRepository = true
+      result.isGithubRepo = true
       result.type = 'https'
       return result
     } else if (isRepo.test(repo)) {
-      result.isGitRepository = true
+      result.isGithubRepo = true
       result.type = 'repo'
       return result
     }
