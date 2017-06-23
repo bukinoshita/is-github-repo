@@ -43,6 +43,12 @@ Default: `false`
 
 if set to `true`, it will return an `object`.
 
+
+## Related
+
+- [git-url-uglify](https://github.com/bukinoshita/git-url-uglify) — Uglify git url
+- [git-url-prettify](https://github.com/bukinoshita/git-url-prettify) — Prettify git url
+
 ## License
 
 MIT © [Bu Kinoshita](https://bukinoshita.io)
