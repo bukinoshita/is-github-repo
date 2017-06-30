@@ -13,6 +13,7 @@
     "ava": "^0.19.1",
     "xo": "^0.18.2"
   },
+  "keywords": ["git", "github", "repository", "repo", "url", "https", "http"],
   "xo": {
     "space": true,
     "semicolon": false,
