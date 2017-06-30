@@ -1,7 +1,7 @@
 {
   "name": "is-github-repo",
   "description": "Checks if string is a git repository",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "git@github.com:bukinoshita/is-git-repository.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
@@ -13,7 +13,15 @@
     "ava": "^0.19.1",
     "xo": "^0.18.2"
   },
-  "keywords": ["git", "github", "repository", "repo", "url", "https", "http"],
+  "keywords": [
+    "git",
+    "github",
+    "repository",
+    "repo",
+    "url",
+    "https",
+    "http"
+  ],
   "xo": {
     "space": true,
     "semicolon": false,
