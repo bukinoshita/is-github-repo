@@ -1,23 +1,18 @@
-'use strict'
-
+// Packages
 import test from 'ava'
-import isGithubRepo from './'
+
+// Root
+import isGithubRepo from '.'
 
 const https = 'https://github.com/bukinoshita/is-git-repository.git'
 const ssh = 'git@github.com:bukinoshita/is-git-repository.git'
 const repo = 'bukinoshita/is-git-repository'
 
-test('https', t => {
-  t.true(isGithubRepo(https))
-})
+test('https', t => t.true(isGithubRepo(https)))
 
-test('ssh', t => {
-  t.true(isGithubRepo(ssh))
-})
+test('ssh', t => t.true(isGithubRepo(ssh)))
 
-test('repo', t => {
-  t.true(isGithubRepo(repo))
-})
+test('repo', t => t.true(isGithubRepo(repo)))
 
 test('fails', t => {
   const result = isGithubRepo('aefwefew')

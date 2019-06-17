@@ -6,13 +6,9 @@
   "repository": "git@github.com:bukinoshita/is-git-repository.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "devDependencies": {
-    "ava": "^0.19.1",
-    "xo": "^0.18.2"
-  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "git",
     "github",
@@ -22,12 +18,22 @@
     "https",
     "http"
   ],
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "xo"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "xo": "^0.24.0"
+  },
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true,
-    "rules": {
-      "object-curly-spacing": 0
-    }
+    "extends": [
+      "prettier"
+    ]
   }
 }
