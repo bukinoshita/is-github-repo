@@ -2,12 +2,16 @@
   "name": "is-github-repo",
   "description": "Checks if string is a git repository",
   "version": "0.0.2",
-  "main": "index.js",
-  "repository": "git@github.com:bukinoshita/is-git-repository.git",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "bukinoshita/is-git-repository",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
   "files": [
-    "index.js"
+    "dist"
   ],
   "keywords": [
     "git",
@@ -19,33 +23,16 @@
     "http"
   ],
   "scripts": {
-    "test": "nyc ava",
-    "lint": "xo"
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "test": "jest --config=jest.config.json"
   },
   "devDependencies": {
-    "ava": "2.4.0",
-    "eslint-config-prettier": "6.7.0",
-    "husky": "3.1.0",
-    "lint-staged": "9.5.0",
-    "nyc": "14.1.1",
-    "prettier": "1.19.1",
-    "xo": "0.25.3"
-  },
-  "xo": {
-    "extends": [
-      "prettier"
-    ]
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --semi false --single-quote --write",
-      "yarn lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "@sindresorhus/tsconfig": "^0.7.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
   }
 }
