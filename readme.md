@@ -1,4 +1,4 @@
-# is-github-repo [![Build Status](https://travis-ci.org/bukinoshita/is-github-repo.svg?branch=master)](https://travis-ci.org/bukinoshita/is-github-repo) [![codecov](https://codecov.io/gh/bukinoshita/is-github-repo/branch/master/graph/badge.svg)](https://codecov.io/gh/bukinoshita/is-github-repo)
+# is-github-repo [![Build Status](https://travis-ci.org/bukinoshita/is-github-repo.svg?branch=master)](https://travis-ci.org/bukinoshita/is-github-repo)
 
 > Checks if string is a git repository
 
@@ -13,11 +13,11 @@ $ yarn add is-github-repo
 ```js
 const isGithubRepo = require('is-github-repo')
 
-/* with https */
+/* with HTTPS */
 isGithubRepo('https://github.com/bukinoshita/is-github-repo.git')
 // => true
 
-/* with ssh */
+/* with SSH */
 isGithubRepo('git@github.com:bukinoshita/is-github-repo.git')
 // => true
 
@@ -28,25 +28,14 @@ isGithubRepo('bukinoshita/is-github-repo')
 
 ## API
 
-### isGithubRepo(repo, [options])
+### isGithubRepo(repo)
 
-returns a `boolean` or `object`.
+returns a `boolean`.
 
 #### repo
 
 Type: `string`<br/>
 Required
-
-#### options
-
-Type: `object`
-
-##### withType
-
-Type: `boolean`<br/>
-Default: `false`
-
-if set to `true`, it will return an `object`.
 
 ## Related
 
@@ -54,8 +43,7 @@ if set to `true`, it will return an `object`.
 - [del-git-index](https://github.com/bukinoshita/del-git-index) — Safely delete index.lock of the current project
 - [repo-exist](https://github.com/bukinoshita/repo-exist) — Checks if GitHub repository exist
 - [gopn](https://github.com/bukinoshita/gopn) — Open GitHub repositories
-- [is-github-repo](https://github.com/bukinoshita/is-github-repo) — Checks if string is a git repository
-- [git-url-uglify](https://github.com/bukinoshita/git-url-uglify) — Uglify git url
+- [is-github-rify](https://github.com/bukinoshita/git-url-uglify) — Uglify git url
 - [git-url-prettify](https://github.com/bukinoshita/git-url-prettify) — Prettify git url
 
 ## License
