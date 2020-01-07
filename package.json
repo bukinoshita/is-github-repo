@@ -1,7 +1,7 @@
 {
   "name": "is-github-repo",
   "description": "Checks if string is a git repository",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "bukinoshita/is-git-repository",
