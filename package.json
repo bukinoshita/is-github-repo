@@ -28,7 +28,7 @@
     "test": "jest --config=jest.config.json"
   },
   "devDependencies": {
-    "@sindresorhus/tsconfig": "0.7.0",
+    "@sindresorhus/tsconfig": "0.8.0",
     "@types/jest": "26.0.14",
     "@types/node": "13.13.26",
     "jest": "26.4.2",
