@@ -1,4 +1,4 @@
-{
+  {
   "name": "is-github-repo",
   "description": "Checks if string is a git repository",
   "version": "1.0.0",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@sindresorhus/tsconfig": "0.8.0",
-    "@types/jest": "26.0.14",
+    "@types/jest": "26.0.20",
     "@types/node": "13.13.41",
     "jest": "26.6.3",
     "ts-jest": "26.5.1",
